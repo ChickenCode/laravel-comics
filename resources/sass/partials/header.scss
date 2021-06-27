@@ -1,0 +1,44 @@
+.jumbotron {
+    background-image: url("/images/jumbotron.jpg");
+    background-size: 100%;
+    object-fit: contain;
+    height: 310px;
+}
+
+.flex {
+    display: flex;
+}
+
+.topline {
+    background-color: #0282f9;
+    font-size: 0.8em;;
+
+    p {
+        margin-bottom: 0;
+    }
+}
+
+.nav-logo {
+    height: 50px;
+}
+
+.navlist li {
+    display: inline-block;
+}
+
+.navlink {
+   text-decoration: none;
+   color: gray;
+   padding: 0 5px;
+}
+
+.search {
+    margin-left: 40px;
+    width: 100px;
+    border: unset;
+    border-bottom: solid 2px #0282f9;
+    
+    &::placeholder {
+    
+    }
+}
