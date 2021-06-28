@@ -66,7 +66,47 @@ input::placeholder {
     display: inline-block;
     transform: translateY(-2px);
 }
-* {
+.top-footer {
+    background-image: url("/images/footer-bg.jpg");
+    padding: 20px;
+}
+
+footer h3 {
+    color: whitesmoke;
+    margin-bottom: 10px;
+}
+footer a {
+    text-decoration: none;
+    color: gray;
+    font-size: 0.8em;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .container.flex div {
+    margin-right: 30px;
+    margin-bottom: 20px;
+} 
+
+.sign-up {
+    
+    padding: 5px;
+    border: 2px solid #0282f9;
+    display: inline-block;
+}
+
+footer .black-ground img {
+    width: 20px;
+    height: 20px;
+    margin: 0 8px;
+
+}
+
+footer .black-ground img:hover {
+    transform: scale(1.2);
+}* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -115,7 +155,7 @@ ul {
        object-position: right top;
 }
 
-.container h3 {
+main .container h3 {
     color: white;
     padding: 5px 15px;
     background-color: #0282f9;
