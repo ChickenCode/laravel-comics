@@ -7,16 +7,16 @@
 </div>
 
 {{-- Navbar --}}
-<nav class="flex container" style="justify-content: space-between; align-items: center;">
+<nav class="flex container" style="justify-content: space-between; align-items: center; padding: 10px 0px">
     
         <img src="{{asset('images/dc-logo.png')}}" alt="" class="nav-logo">
         <ul class="navlist">
             
                 <li><a href="#" class="navlink">CHARACTERS</a></li>
-                <li><a href="#" class="navlink" autofocus>COMICS</a></li>
-                <li><a href="#" class="navlink">MOVIES</a></li>
+                <li><a href="{{route('comics')}}" class="navlink" autofocus>COMICS</a></li>
+                <li><a href="{{route('movies')}}" class="navlink">MOVIES</a></li>
                 <li><a href="#" class="navlink">TV</a></li>
-                <li><a href="#" class="navlink">GAMES</a></li>
+                <li><a href="{{route('games')}}" class="navlink">GAMES</a></li>
                 <li><a href="#" class="navlink">COLLECTABLES</a></li>
                 <li><a href="#" class="navlink">VIDEOS</a></li>
                 <li><a href="#" class="navlink">FANS</a></li>
