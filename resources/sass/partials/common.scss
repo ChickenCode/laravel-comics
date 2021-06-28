@@ -1,8 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .container {
     width: 1080px;
     margin: auto;
 }
 
+
 ul {
     list-style: none;
 }
+
+.flex {
+    display: flex;
+}
+ .m-l-50 {
+     margin-left: 50px;
+ }
+
+ .flex-column {
+     flex-direction: column;
+ }
+
+ .wrap {
+     flex-wrap: wrap;
+ }

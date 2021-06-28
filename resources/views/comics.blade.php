@@ -1,21 +1,26 @@
 @extends('layouts.layout')
 
 @section('content')
-    <section>
+<section class="black-ground" style="padding-bottom: 15px;">
+    <div class="container ">
         <h3>CURRENT SERIES</h3>
-        <div>
+        
+            <div class="flex wrap">
             @foreach($comicsList as $singleComic)
-                <img src="{{$singleComic["thumb"]}}" alt="">
-                <p>{{strtoupper($singleComic["series"])}}</p>
+            <div class="flex flex-column card">
+            <img src="{{$singleComic["thumb"]}}" alt="">
+            <p>{{strtoupper($singleComic["series"])}}</p>
+            </div>
             @endforeach
-
-            <div>
-                <button>LOAD MORE</button>
+            </div>
+            <div style="text-align: center">
+                <p class="load">LOAD MORE</p>
             </div>
         </div>
-    </section>
     
-    <section style="background-color: #0282f9;">
+</section>
+
+<section style="background-color: #0282f9;">
     <div>
         <img src="{{'images/buy-comics-digital-comics.png'}}" alt="">
         <p>DIGITAL COMICS</p>
@@ -36,5 +41,5 @@
         <img src="{{'images/buy-dc-power-visa.svg'}}" style="width: 100px" alt="">
         <p>DC POWER VISA</p>
     </div>
-    </section>
+</section>
 @endsection

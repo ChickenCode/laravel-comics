@@ -5,17 +5,10 @@
     height: 310px;
 }
 
-.flex {
-    display: flex;
-}
-
 .topline {
     background-color: #0282f9;
-    font-size: 0.8em;;
-
-    p {
-        margin-bottom: 0;
-    }
+    font-size: 0.7em;
+    padding: 3px 0;
 }
 
 .nav-logo {
@@ -24,21 +17,43 @@
 
 .navlist li {
     display: inline-block;
+    margin: 0 10px;
 }
 
 .navlink {
    text-decoration: none;
-   color: gray;
-   padding: 0 5px;
+   color: 	rgb(32,32,32);
+   vertical-align: middle;
+   font-size: 0.8em; 
+   padding-bottom: 15px;
+}
+
+.navlink:focus {
+    border-bottom: 3.5px solid #0282f9;
+    color: #0282f9;
+    outline: none;
 }
 
 .search {
     margin-left: 40px;
     width: 100px;
     border: unset;
-    border-bottom: solid 2px #0282f9;
+    border-bottom: solid 3px #0282f9;
     
-    &::placeholder {
-    
-    }
+}
+
+.blueline {
+    justify-content: flex-end;
+    outline: none;
+    color: white;
+}
+
+input::placeholder {
+    text-align: right;
+}
+
+.arrow {
+    font-size: 0.5em;
+    display: inline-block;
+    transform: translateY(-2px);
 }
