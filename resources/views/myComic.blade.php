@@ -40,7 +40,7 @@
                 <p>Art by:</p>
                 <div>
                     @foreach($myComic["artists"] as $singleArtist)
-                    <a href="#">{{$singleArtist}}</a>
+                    <a href="#">{{$singleArtist}}</a>, 
                     @endforeach
                 </div>
             </div>
