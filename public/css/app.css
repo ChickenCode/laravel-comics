@@ -29,7 +29,7 @@
    padding-bottom: 25px;
 }
 
-.navlink:focus {
+.active {
     border-bottom: 3.5px solid #0282f9;
     color: #0282f9;
     outline: none;
@@ -193,5 +193,8 @@ main .container h3 {
     color: white;
     font-size: 0.8em;
     margin: 0 5px;
+}.comic-bluebar {
+    background-color: #0282f9;
+    height: 80px;
 }
 

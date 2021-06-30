@@ -13,10 +13,10 @@
         <ul class="navlist">
             
                 <li><a href="#" class="navlink">CHARACTERS</a></li>
-                <li><a href="{{route('comics')}}" class="navlink" autofocus>COMICS</a></li>
-                <li><a href="{{route('movies')}}" class="navlink">MOVIES</a></li>
+                <li><a href="{{route('comics')}}" class="navlink {{ Request::route()->getName() == 'comics' ? 'active' : ''}}">COMICS</a></li>
+                <li><a href="{{route('movies')}}" class="navlink {{ Request::route()->getName() == 'movies' ? 'active' : ''}}">MOVIES</a></li>
                 <li><a href="#" class="navlink">TV</a></li>
-                <li><a href="{{route('games')}}" class="navlink">GAMES</a></li>
+                <li><a href="{{route('games')}}" class="navlink {{ Request::route()->getName() == 'games' ? 'active' : ''}}">GAMES</a></li>
                 <li><a href="#" class="navlink">COLLECTABLES</a></li>
                 <li><a href="#" class="navlink">VIDEOS</a></li>
                 <li><a href="#" class="navlink">FANS</a></li>

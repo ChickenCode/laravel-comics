@@ -21,6 +21,15 @@ Route::get('/', function () {
     ]);
 })->name("comics");
 
+Route::get('/{index}', function ($index) {
+    $comicsData = config("comics");
+    $specificComic = $comicsData[$index];
+    
+    return view('/myComic', [
+        "myComic" => $specificComic
+    ]);
+})->name("myComic");
+
 Route::get('/movies', function () {  
     return view('/movies');
 })->name('movies');

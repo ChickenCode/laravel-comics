@@ -6,10 +6,12 @@
         <h3>CURRENT SERIES</h3>
         
             <div class="flex wrap">
-            @foreach($comicsList as $singleComic)
+            @foreach($comicsList as $key => $singleComic)
             <div class="flex flex-column card">
-            <img src="{{$singleComic["thumb"]}}" alt="">
-            <p>{{strtoupper($singleComic["series"])}}</p>
+                <img src="{{$singleComic["thumb"]}}" alt="">
+                <a href="{{route('myComic', ['index' => $key])}}">
+                <p>{{strtoupper($singleComic["series"])}}</p>
+                </a>
             </div>
             @endforeach
             </div>
